@@ -11,10 +11,10 @@ async function bootstrap() {
     .setVersion('0.1')
     .build();
 
-  //Create a Swagger document using the aplication and the documentacion configuraciton
+  //Create a Swagger document using the aplication and the documentation configuration
   const document = SwaggerModule.createDocument(app, config);
 
-  //setup Swagger module the aplkication instance and the Swagger document
+  //setup Swagger module the aplication instance and the Swagger document
   SwaggerModule.setup('api', app, document);
 
   await app.listen(3000);
